@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Loan Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="MITTI-FAM.png" alt="Farmer Loan Logo" class="logo">
+    <h1>Farmer Loan Platform</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#loan-application">Loan Application</a>
+      <a href="#loan-calculator">Loan Calculator</a>
+      <a href="#community-service">Community Service</a>
+      <a href="#tips">Tips & Education</a>
+      <a href="#loan-giver">Loan Giver</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to the Farmer Loan Platform</h2>
+    <p>Your trusted partner for financial support and agricultural knowledge.</p>
+  </section>
+
+  <section id="loan-application">
+    <h2>Loan Application</h2>
+    <form id="loanForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact Number</label>
+        <input type="tel" id="contact" name="contact" required>
+      </div>
+      <div class="form-group">
+        <label for="farm-size">Farm Size (in acres)</label>
+        <input type="number" id="farm-size" name="farm_size" required>
+      </div>
+      <div class="form-group">
+        <label for="loan-amount">Loan Amount (₹)</label>
+        <input type="number" id="loan-amount" name="loan_amount" required>
+      </div>
+      <div class="form-group">
+        <label for="loan-duration">Loan Duration (in years)</label>
+        <select id="loan-duration" name="loan_duration" required>
+          <option value="1">1 Year</option>
+          <option value="2">2 Years</option>
+          <option value="3">3 Years</option>
+          <option value="5">5 Years</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="button" id="submitLoan">Submit Application</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="loan-calculator">
+    <h2>Loan Calculator</h2>
+    <form id="calculatorForm">
+      <div class="form-group">
+        <label for="principal">Loan Amount (₹)</label>
+        <input type="number" id="principal" name="principal" required>
+      </div>
+      <div class="form-group">
+        <label for="rate">Annual Interest Rate (%)</label>
+        <input type="number" id="rate" name="rate" step="0.1" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Loan Duration (in years)</label>
+        <input type="number" id="time" name="time" required>
+      </div>
+      <div class="form-group">
+        <button type="button" id="calculateBtn">Calculate EMI</button>
+      </div>
+    </form>
+    <div id="emiResult"></div>
+  </section>
+
+  <section id="community-service">
+    <h2>Community Service</h2>
+    <p>Connect with fellow farmers to share knowledge, resources, and experiences.</p>
+  </section>
+
+  <section id="tips">
+    <h2>Tips & Educational Information</h2>
+    <article>
+      <h3>Farming Techniques</h3>
+      <p>Learn modern farming techniques to increase productivity.</p>
+    </article>
+    <article>
+      <h3>Financial Literacy</h3>
+      <p>Understand loans, interest rates, and financial planning.</p>
+    </article>
+  </section>
+
+  <section id="loan-giver">
+    <h2>For Loan Givers</h2>
+    <p>Access submitted applications, review details, and communicate with farmers.</p>
+    <button id="viewApplications">View Applications</button>
+  </section>
+
+  <footer>
+    <p>Farmer Loan Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
